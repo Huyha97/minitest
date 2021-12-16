@@ -5,6 +5,11 @@ public class Student extends Person {
         this.avgPoint = avgPoint;
     }
 
+    public Student(String name, int age, int id, double avgPoint) {
+        super(name, age, id);
+        this.avgPoint = avgPoint;
+    }
+
     public double getAvgPoint() {
         return avgPoint;
     }

@@ -1,6 +1,6 @@
 public interface Manager {
 
-        void displayStudent();
+    static abstract void displayStudent();
         void addStudent();
         void searchStudent();
         void deleteStudent();
