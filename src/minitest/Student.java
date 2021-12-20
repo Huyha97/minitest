@@ -1,3 +1,5 @@
+package minitest;
+
 public class Student extends Person {
     private double avgPoint;
 
