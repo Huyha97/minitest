@@ -59,6 +59,9 @@ public class Main {
                 case 4:
                     Manager.upDateByName(scanner);
                     break;
+                case 5:
+                    Manager.DisplayByName(scanner);
+                    break;
 
 
             }

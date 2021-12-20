@@ -13,8 +13,6 @@ private static Set<Animal> animals;
         this.animals = new HashSet<>();
     }
 
-
-
     public static void displayAll() {
         for (Animal animal : animals) {
             System.out.println(animal);
@@ -40,12 +38,11 @@ private static Set<Animal> animals;
         System.out.println(" nhập tên con vật cần sửa: ");
         String name = scanner.nextLine();
         scanner.nextLine();
-        Animal AnimalUpdate = null;
+        Animal AnimalUpdate;
         for (Animal animal : animals) {
             if (animal.getName().equals(name)) {
                 AnimalUpdate = animal;
                 System.out.println("Nhập tên mới: ");
-                assert AnimalUpdate != null;
                 AnimalUpdate.setName(scanner.nextLine());
                 System.out.println(" nhập tuổi mới");
                 AnimalUpdate.setAge(scanner.nextInt());
@@ -53,9 +50,19 @@ private static Set<Animal> animals;
                 AnimalUpdate.setWeight(scanner.nextDouble());
                 scanner.nextLine();
             }
-
         }
+    }
 
+    public static void DisplayByName(Scanner scanner) {
+        System.out.println(" nhập tên con vật muốn hiển thị: ");
+        String name = scanner.nextLine();
+        scanner.nextLine();
+        for (Animal animal : animals) {
+            if (name.equals(animal.getName())) {
+                System.out.println(animal);
+            }else
+                System.out.println(" không tìm thấy!!!");
+            }
     }
 
 
