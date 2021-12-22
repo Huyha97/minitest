@@ -1,23 +1,26 @@
-package baitap.baitapthem;
+package baitap.baitapthem.chua;
 
 public class Candy {
+    private static int VALUE  = 0;
     private int id;
-    private static int VALUE = 0;
     private String color;
     private String property;
     private int quanity;
-    private double price;
+    private double amount;
 
     public Candy() {
     }
 
-    public Candy( String color, String property, int quanity, double price) {
+    public Candy( String color, String property, int quanity, double amount) {
         this.id = ++VALUE;
         this.color = color;
         this.property = property;
         this.quanity = quanity;
-        this.price = price;
+        this.amount = amount;
     }
+
+
+
 
     public int getId() {
         return id;
@@ -25,14 +28,6 @@ public class Candy {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public static int getVALUE() {
-        return VALUE;
-    }
-
-    public static void setVALUE(int VALUE) {
-        Candy.VALUE = VALUE;
     }
 
     public String getColor() {
@@ -59,12 +54,12 @@ public class Candy {
         this.quanity = quanity;
     }
 
-    public double getPrice() {
-        return price;
+    public double getAmount() {
+        return amount;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setAmount(double amount) {
+        this.amount = amount;
     }
 
     @Override
@@ -74,8 +69,7 @@ public class Candy {
                 ", color='" + color + '\'' +
                 ", property='" + property + '\'' +
                 ", quanity=" + quanity +
-                ", price=" + price +
+                ", amount=" + amount +
                 '}';
     }
-
 }

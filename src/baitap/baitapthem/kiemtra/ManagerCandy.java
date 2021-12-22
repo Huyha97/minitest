@@ -1,4 +1,4 @@
-package baitap.baitapthem;
+package baitap.baitapthem.kiemtra;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -42,6 +42,26 @@ public class ManagerCandy {
                 candy = h;
             }
             System.out.println(h);
+        }
+    }
+
+    public Candy deleteByColor(String color) {
+        Candy candy = null;
+        for (Candy h : candys) {
+            if (h.getColor() == color) {
+                candy = h;
+            }
+        }
+        candys.remove(candy);
+        return candy;
+    }
+
+    public void DisplaybyColor(String color) {
+        for (Candy k : candys) {
+            if (k.getColor().equals(color)) {
+                System.out.println(k);
+            }
+
         }
     }
 

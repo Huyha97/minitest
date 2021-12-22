@@ -1,4 +1,4 @@
-package baitap.baitapthem;
+package baitap.baitapthem.kiemtra;
 
 import java.util.Scanner;
 
@@ -45,6 +45,13 @@ public class Main {
                     scanner.nextLine();
                     managerCandy.DisplayById(idDisplay);
                     break;
+                case 6:
+                    System.out.println(" nhập màu kẹo muốn xóa: ");
+                    String color = scanner.nextLine();
+                    scanner.nextLine();
+                    System.out.println(managerCandy.deleteByColor(color));
+                case 7:
+
             }
 
         } while (choice != 0);
