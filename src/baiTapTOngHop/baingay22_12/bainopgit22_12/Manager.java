@@ -1,6 +1,4 @@
-package baiTapTOngHop;
-
-import org.omg.CORBA.PUBLIC_MEMBER;
+package baiTapTOngHop.baingay22_12.bainopgit22_12;
 
 import java.util.ArrayList;
 import java.util.Scanner;
